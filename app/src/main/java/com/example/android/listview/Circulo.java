@@ -22,9 +22,9 @@ public class Circulo extends AppCompatActivity {
 
     public void calcular(View v){
         if (validar()) {
-            double lado, resultado;
-            lado = Integer.parseInt(txtRadio.getText().toString());
-            resultado = Metodos.areaCirculo(lado);
+            double radio, resultado;
+            radio = Integer.parseInt(txtRadio.getText().toString());
+            resultado = Metodos.areaCirculo(radio);
             Toast.makeText(this, recursos.getString(R.string.mensaje_area)
                     + " " + resultado, Toast.LENGTH_SHORT).show();
             borrar();

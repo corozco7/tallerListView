@@ -15,6 +15,7 @@
     <string name="calcular">Calcular</string>
     <string name="borrar">Borrar</string>
     <string name="mensaje_area">Area:</string>
+    <string name="mensaje_volumen">Volumen:</string>
     <string name="error_uno">Debe agregar un valor</string>
     <string name="error_dos">El valor debe ser mayor a 0</string>
     <string name="base">Base</string>
@@ -33,7 +34,7 @@
     </string-array>
     <string-array name="volumenes">
         <item>@string/esfera</item>
-        <item>@string/circulo</item>
+        <item>@string/cilindro</item>
         <item>@string/cono</item>
         <item>@string/cubo</item>
     </string-array>
