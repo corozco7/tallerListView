@@ -21,6 +21,12 @@
     <string name="base">Base</string>
     <string name="altura">Altura</string>
     <string name="radio">Radio</string>
+    <string name="operacion">Operacion</string>
+    <string name="datos">Datos</string>
+    <string name="resultado">Resultado</string>
+    <string name="area_operacion">Area de</string>
+    <string name="volumen_operacion">Volumen de</string>
+    <string name="lado">Lado</string>
     <string-array name="opciones">
         <item>@string/areas</item>
         <item>@string/volumenes</item>

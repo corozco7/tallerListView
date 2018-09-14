@@ -25,6 +25,10 @@ public class Circulo extends AppCompatActivity {
             double radio, resultado;
             radio = Integer.parseInt(txtRadio.getText().toString());
             resultado = Metodos.areaCirculo(radio);
+            Operacion o = new Operacion(recursos.getString(R.string.area_operacion)+ " "
+                    + recursos.getString(R.string.circulo),recursos.getString(R.string.radio)
+                    + " " + radio,""+resultado);
+            o.guardar();
             Toast.makeText(this, recursos.getString(R.string.mensaje_area)
                     + " " + resultado, Toast.LENGTH_SHORT).show();
             borrar();

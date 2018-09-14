@@ -25,6 +25,10 @@ public class Esfera extends AppCompatActivity {
             double radio, resultado;
             radio = Integer.parseInt(txtRadio.getText().toString());
             resultado = Metodos.volumenEsfera(radio);
+            Operacion o = new Operacion(recursos.getString(R.string.volumen_operacion)+ " "
+                    + recursos.getString(R.string.esfera),recursos.getString(R.string.radio)
+                    + " " + radio,""+resultado);
+            o.guardar();
             Toast.makeText(this, recursos.getString(R.string.mensaje_volumen)
                     + " " + resultado, Toast.LENGTH_SHORT).show();
             borrar();

@@ -25,6 +25,10 @@ public class Cubo extends AppCompatActivity {
             double lado, resultado;
             lado = Integer.parseInt(txtLado.getText().toString());
             resultado = Metodos.volumenCubo(lado);
+            Operacion o = new Operacion(recursos.getString(R.string.volumen_operacion)+ " "
+                    + recursos.getString(R.string.cubo),recursos.getString(R.string.lado)
+                    + " " + lado,""+resultado);
+            o.guardar();
             Toast.makeText(this, recursos.getString(R.string.mensaje_volumen)
                     + " " + resultado, Toast.LENGTH_SHORT).show();
             borrar();

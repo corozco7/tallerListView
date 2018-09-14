@@ -27,6 +27,11 @@ public class Cono extends AppCompatActivity {
             radio = Integer.parseInt(txtRadio.getText().toString());
             altura = Integer.parseInt(txtAltura.getText().toString());
             resultado = Metodos.volumenCono(radio, altura);
+            Operacion o = new Operacion(recursos.getString(R.string.volumen_operacion)+ " "
+                    + recursos.getString(R.string.cono),recursos.getString(R.string.radio)
+                    + " " +radio+ " " + recursos.getString(R.string.altura) + " " + altura,
+                    ""+resultado);
+            o.guardar();
             Toast.makeText(this, recursos.getString(R.string.mensaje_volumen)
                     + " " + resultado, Toast.LENGTH_SHORT).show();
             borrar();

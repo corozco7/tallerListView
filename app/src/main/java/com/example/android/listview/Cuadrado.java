@@ -26,6 +26,10 @@ public class Cuadrado extends AppCompatActivity {
             double lado, resultado;
             lado = Integer.parseInt(txtLado.getText().toString());
             resultado = Metodos.areaCuadrado(lado);
+            Operacion o = new Operacion(recursos.getString(R.string.area_operacion)+ " "
+                    + recursos.getString(R.string.cuadrado),recursos.getString(R.string.lado)
+                    + " " + lado,""+resultado);
+            o.guardar();
             Toast.makeText(this, recursos.getString(R.string.mensaje_area)
                             + " " + resultado, Toast.LENGTH_SHORT).show();
             borrar();

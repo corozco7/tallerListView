@@ -27,6 +27,11 @@ public class Triangulo extends AppCompatActivity {
             base = Integer.parseInt(txtBase.getText().toString());
             altura = Integer.parseInt(txtAltura.getText().toString());
             resultado = Metodos.areaTriangulo(base, altura);
+            Operacion o = new Operacion(recursos.getString(R.string.area_operacion)+ " "
+                    + recursos.getString(R.string.triangulo),recursos.getString(R.string.base)
+                    + " " +base+ " " + recursos.getString(R.string.altura) + " " + altura,
+                    ""+resultado);
+            o.guardar();
             Toast.makeText(this, recursos.getString(R.string.mensaje_area)
                     + " " + resultado, Toast.LENGTH_SHORT).show();
             borrar();
