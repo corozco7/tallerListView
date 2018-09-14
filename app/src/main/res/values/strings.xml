@@ -17,6 +17,9 @@
     <string name="mensaje_area">Area:</string>
     <string name="error_uno">Debe agregar un valor</string>
     <string name="error_dos">El valor debe ser mayor a 0</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+    <string name="radio">Radio</string>
     <string-array name="opciones">
         <item>@string/areas</item>
         <item>@string/volumenes</item>

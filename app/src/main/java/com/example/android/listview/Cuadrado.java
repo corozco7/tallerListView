@@ -23,8 +23,7 @@ public class Cuadrado extends AppCompatActivity {
 
     public void calcular(View v){
         if (validar()) {
-            int lado;
-            int resultado = 0;
+            double lado, resultado;
             lado = Integer.parseInt(txtLado.getText().toString());
             resultado = Metodos.areaCuadrado(lado);
             Toast.makeText(this, recursos.getString(R.string.mensaje_area)
