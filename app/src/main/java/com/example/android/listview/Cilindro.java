@@ -3,11 +3,11 @@ package com.example.android.listview;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Operaciones extends AppCompatActivity {
+public class Cilindro extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_operaciones);
+        setContentView(R.layout.activity_cilindro);
     }
 }

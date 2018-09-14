@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Areas" />
+        <activity android:name=".Volumenes" />
+        <activity android:name=".Operaciones" />
+        <activity android:name=".Cuadrado" />
+        <activity android:name=".Rectangulo" />
+        <activity android:name=".Triangulo" />
+        <activity android:name=".Circulo" />
+        <activity android:name=".Esfera" />
+        <activity android:name=".Cilindro" />
+        <activity android:name=".Cono" />
+        <activity android:name=".Cubo"></activity>
     </application>
 
 </manifest>
